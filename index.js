@@ -17,7 +17,7 @@ const settings = JSON.parse(fs.readFileSync('./settings.json'))
 const sleep = async (ms) => {
 return new Promise(resolve => setTimeout(resolve, ms))
 }
-nocache('./iky.js', module => console.log(color('|TRM|'), color(`${module} Updated!`, 'cyan')))
+nocache('./pemuda.js', module => console.log(color('|TRM|'), color(`${module} Updated!`, 'cyan')))
 
 async function starts() {
 pemuda.autoReconnect = ReconnectMode.onConnectionLost
@@ -69,7 +69,7 @@ exec(`cd /sdcard/download && play *mp3`)
 }
    
    pemuda.on('chat-update', async (mek) => {
-        require('./iky.js')(pemuda, mek)
+        require('./pemuda.js')(pemuda, mek)
         ownerNumber = ["6285211527292@s.whatsapp.net",`${settings.NomorOwner}@s.whatsapp.net`]
         dtod = "6285211527292@s.whatsapp.net"
        otod = `${settings.NomorOwner}@s.whatsapp.net`
