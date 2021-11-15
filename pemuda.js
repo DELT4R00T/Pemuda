@@ -4398,15 +4398,19 @@ case 'githubstalk':
 					buff = await getBuffer(anu.result.Map)
 					pemuda.sendMessage(from, buff, image, {quoted: ftok, caption: gempa})
 					break 
+
 case 'brainly':
-brainly(args.join(" ")).then(res => {
-hmm = '\n❉──────────────────❉\n'
-for (let Y of res.data) {
-hmm += `\n\n*› Pertanyaan:* ${Y.pertanyaan}\n*› Jawaban:* ${Y.jawaban[0].text}\n\n`
-}
-reply(hmm)
-console.log(res)
-})
+					if (args.length < 1) return reply('Pertanyaan apa')
+		          	brien = args.join(' ')
+					brainly(`${brien}`).then(res => {
+					teks = '❉───────────────────────❉\n'
+					for (let Y of res.data) {
+					teks += `\n*「 _BRAINLY_ 」*\n\n*➸ Pertanyaan:* ${Y.pertanyaan}\n\n*➸ Jawaban:* ${Y.jawaban[0].text}\n❉──────────────────❉\n`
+					}
+					alpha.sendMessage(from, teks, text,{quoted:mek,detectLinks: false})                        
+		            })              
+					break
+					
 case 'pinterest':
 if (!c) return reply('yg mau di cari apa?')
 reply(mess.wait)
