@@ -4407,7 +4407,7 @@ case 'brainly':
 					for (let Y of res.data) {
 					teks += `\n*「 _BRAINLY_ 」*\n\n*➸ Pertanyaan:* ${Y.pertanyaan}\n\n*➸ Jawaban:* ${Y.jawaban[0].text}\n❉──────────────────❉\n`
 					}
-					alpha.sendMessage(from, teks, text,{quoted:mek,detectLinks: false})                        
+					pemuda.sendMessage(from, teks, text,{quoted:mek,detectLinks: false})                        
 		            })              
 					break
 					
