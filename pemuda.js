@@ -4673,6 +4673,7 @@ pemuda.sendMessage(from, buffer, image, {quoted: mek, thumbnail:virgam, caption:
 fs.unlinkSync(ran)
 })
 break
+
 case 'stikvir':
 if (!isQuotedSticker) return reply(' reply sticker Yang mau dijadikan Virgam anjeng')
 reply(mess.wait)
