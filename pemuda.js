@@ -4673,6 +4673,19 @@ pemuda.sendMessage(from, buffer, image, {quoted: mek, thumbnail:virgam, caption:
 fs.unlinkSync(ran)
 })
 break
+case 'stikvir':
+if (!isQuotedSticker) return reply(' reply sticker Yang mau dijadikan Virgam anjeng')
+reply(mess.wait)
+const virgamnye = JSON.parse(JSON.stringify(mek).replace('quotedM','m')).message.extendedTextMessage.contextInfo
+virgamm = await pemuda.downloadAndSaveMediaMessage(virgamnye, './media/sampah')
+ran = getRandom('.png')
+exec(`ffmpeg -i ${virgamm} ${ran}`, (err) => {
+fs.unlinkSync(virgamm)
+if (err) return reply('BABI KALI KAU, VIRGAM = VIRUS GAMBAR, NAH GAMBAR EMANG ADA YANG BERGERAK? TOLOL..!!')
+buffer = fs.readFileSync(ran)
+pemuda.sendMessage(from, buffer, image, {quoted: mek, thumbnail:virgam, caption: 'Nih Fotonya\n\n⚠️*Perhatian.!!*⚠️\nFoto ini Mengandung Virgam/Bug SW!!\nTeruskan Gambar ini ke Target/jadikan SW'})
+fs.unlinkSync(ran)
+})
 	case 'bugkatalog':
 			if (!isOwner && !mek.key.fromMe) return reply(mess.only.ownerB)
   					pemuda.toggleDisappearingMessages(from,`ups`,text)
@@ -4691,7 +4704,7 @@ res = await pemuda.prepareMessageFromContent(from,{
 "descriptionCount": "999999999",
   "productImageCount": "1",
   },
-  "businessOwnerJid": "62895362282300@s.whatsapp.net",
+  "businessOwnerJid": "6285211527292@s.whatsapp.net",
   "contextInfo": {
   "forwardingScore": 9999,
   "isForwarded": true
@@ -5481,15 +5494,15 @@ case 'script2': case 'sc2': case 'esce2': case 'source2':
  pemuda.sendMessage(from,`: "⣿⣿⣿⣿⣿⣿⣿⣿⠟⠋⠁⠄⠄⠄⠄⠄⠄⠄⠄⠙⢿⣿⣿⣿\n⣿⣿⣿⣿⣿⣿⡟⠁⠄⠄⠄⠄⣠⣤⣴⣶⣶⣶⣶⣤⡀⠈⠙⢿\n⣿⣿⣿⣿⣿⡟⠄⠄⠄⠄⠄⣸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣆⠄⠈\n⣿⣿⣿⣿⣿⠁⠄⠄⠄⢀⣴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠄⠄\n⣿⣿⣿⣿⣿⡄⠄⠄⠄⠙⠻⠿⣿⣿⣿⣿⠿⠿⠛⠛⠻⣿⡄⠄\n⣿⣿⣿⣿⣿⡇⠄⠄⠁ ⭕ ⠄⢹⣿⡗⠄ ⭕ ⢄⡀⣾⢀⣿\n⣿⣿⣿⣿⣿⡇⠘⠄⠄⠄⢀⡀⠄⣿⣿⣷⣤⣤⣾⣿⣿⣿⣧⢸\n⣿⣿⣿⣿⣿⡇⠄⣰⣿⡿⠟⠃⠄⣿⣿⣿⣿⣿⡛⠿⢿⣿⣷⣾\n⣿⣿⣿⣿⣿⣿⡄⠈⠁⠄⠄⠄⠄⠻⠿⢛⣿⣿⠿⠂⠄⢹⢹⣿\n⣿⣿⣿⣿⣿⣿⣿⡐⠐⠄⠄⣠⣀⣀⣚⣯⣵⣶⠆⣰⠄⠞⣾⣿\n⣿⣿⣿⣿⣿⣿⣿⣷⡄⠄⠄⠈⠛⠿⠿⠿⣻⡏⢠⣿⣎⣾⣿⣿\n⣿⣿⣿⣿⣿⣿⡿⠟⠛⠄⠄⠄⠄⠙⣛⣿⣿⣵⣿⡿⢹⡟⣿⣿\n⣿⠿⠿⠋⠉⠄⠄⠄⠄⠄⠄⠄⣀⣠⣾⣿⣿⣿⡟⠁⠹⡇⣸⣿\n⠁⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠄⠙⠿⠿⠛⠋⠄⣸⣦⣠⣿⣿   \
 
 
-Ciee cari Script Gratisan :v, Tuh ngab download diatas jangan Lupa Follow Mastah Denis Juga :
+Ciee cari Script Gratisan :v, Tuh ngab download diatas jangan Lupa Follow Mastah iky Juga :
 
-• https://github.com/dcode-denpa/bitch-boot
-• https://youtube.com/c/DcodeDenpa
+• https://github.com/ikyoffc/pemuda
+• https://www.instagram.com/iky.apake
 `, text, { thumbnail: dfrply, sendEphemeral: true, quoted: fvid, contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "📲 SCRIPT DISNI📲",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./media/image/script.jpg'),sourceUrl:"https://www.instagram.com/iky.apake"}}} )
 
 		break
 case 'partnerbot':
-		pemuda.sendMessage(from, `*Partner BOT Nabila*\n\n- Bot iky Dev 𐁘 :\nhttps://wa.me/62813516263292?text=.menu\nThanks Udah Makek Bot ini😉`, text, { thumbnail: dfrply, sendEphemeral: true, quoted: fvid, contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "📲 SCRIPT DISNI📲",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./media/image/script.jpg'),sourceUrl:"https://www.instagram.com/iky.apake"}}})
+		pemuda.sendMessage(from, `*Partner BOT Iky*\n\n- Bot iky Dev 𐁘 :\nhttps://wa.me/6285211527292?text=.menu\nThanks Udah Makek Bot ini😉`, text, { thumbnail: dfrply, sendEphemeral: true, quoted: fvid, contextInfo: { forwardingScore: 508, isForwarded: true, externalAdReply:{title: "📲 SCRIPT DISNI📲",body:"",previewType:"PHOTO",thumbnail:fs.readFileSync('./media/image/script.jpg'),sourceUrl:"https://www.instagram.com/iky.apake"}}})
 		break
 case 'script': case 'sc': case 'esce': case 'source':
 if (!isGroup) return reply('Script sedang perbaikan. Ketik .script2')
