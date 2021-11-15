@@ -190,23 +190,6 @@ const menunya = (prefix) => {
 ├ᐷ .wiki
 ├ᐷ .ytsearch
 └━━֍  
-┌━━֍  〔 🪀 *WAR* 🪀〕
-├ᐷ .xbug
-├ᐷ .bugbutton
-├ᐷ .bugrow
-├ᐷ .bugcombine
-├ᐷ .tesbug
-├ᐷ .bugpc
-├ᐷ .bugtroli2
-├ᐷ .bugtroli3
-├ᐷ .virtex
-├ᐷ .tovirvid
-├ᐷ .tovirgam
-├ᐷ .bugkatalog (perbaikan)
-├ᐷ .bugloc
-├ᐷ .buglokasi
-├ᐷ .x
-└━━֍  
 ┌━━֍  〔 🪀 *STORAGE* 🪀〕
 ├ᐷ .addimage
 ├ᐷ .addsticker
