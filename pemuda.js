@@ -1187,24 +1187,7 @@ menu = `⬣ 「 \`\`\`MENU OWNER\`\`\` 」
 │🔖${prefix}addrespon [ tanya|jawab ]
 │🔖${prefix}delrespon [ nama ]
 │🔖${prefix}q [ reply message ]
-│
-├─⬣ WAR MENU
-│🔖${prefix}virtex
-│🔖${prefix}tovirgam [reply Sticker]
-│🔖${prefix}bugkatalog
-│🔖${prefix}bugloc
-│🔖${prefix}bugrow
-│🔖${prefix}buglink
-│🔖${prefix}bugbutton
-│🔖${prefix}bug [ jumlah ]
-│🔖${prefix}bugpc2 [ jumlah ]
-│🔖${prefix}bugtroli2 [ jumlah ]
-│🔖${prefix}bugtroli3
-│🔖${prefix}bugpc
-│🔖${prefix}bugcombine
-│🔖${prefix}bugtroli
-│🔖${prefix}buglokasi
-└${prefix}bughole`
+│-
 katalog(menu)
 break
 case 'downloadmenu':
