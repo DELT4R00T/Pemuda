@@ -1269,7 +1269,7 @@ menu = `⬣ 「 \`\`\`MENU MAKER\`\`\` 」
 │🔖${prefix}burn 「 text 」
 │🔖${prefix}quote 「 text 」
 │🔖${prefix}wooden 「 text 」
-└${prefix}golden 「 text 」 `
+└${prefix}golden 「 text ]`
 katalog(menu)
 break
 case 'groupmenu':
