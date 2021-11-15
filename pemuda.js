@@ -1186,8 +1186,7 @@ menu = `⬣ 「 \`\`\`MENU OWNER\`\`\` 」
 │🔖${prefix}join [ link group ]
 │🔖${prefix}addrespon [ tanya|jawab ]
 │🔖${prefix}delrespon [ nama ]
-│🔖${prefix}q [ reply message ]
-│-
+│🔖${prefix}q [ reply message ]`
 katalog(menu)
 break
 case 'downloadmenu':
