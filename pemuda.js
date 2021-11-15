@@ -599,7 +599,7 @@ const fstick = {
 	 "mimetype": "image/webp",
         "height": 64,
         "width": 64,
-        "directPath": "/v/t62.15575-24/56110107_763365384384977_5720135628188301198_n.enc?oh=450f8f684b06f0ba2dbc9779e5f06774&oe=605B81EE",
+        "directPath": "/v/t62.15575-24/56110107_763365384384977_5720135628188301198_n.enc?oh=450f8f684b06f0ba2dSM9779e5f06774&oe=605B81EE",
         "fileLength": "60206",
         "firstFrameLength": 3626,
         "isAnimated": false
@@ -1999,11 +1999,11 @@ case 'bc':
 					} else {
 						for (let _ of anu) {
 							//sendMess(_.jid, `${body.slice(4)}`)
-buttons = [{buttonId: `menu`, buttonText: {displayText: '⎙ MENU DISNI'}, type: 1},{buttonId: `owner`, buttonText: {displayText: 'PEMBUAT BOT'}, type: 1}]
+butbrod = [{buttonId: `menu`, buttonText: {displayText: '⎙ MENU DISNI'}, type: 1},{buttonId: `owner`, buttonText: {displayText: 'PEMBUAT BOT'}, type: 1}]
 const btnbc = {
     contentText: `${body.slice(4)}`,
     footerText: 'Broadcast Iky Apake © 2021',
-    buttons: buttons,
+    buttons: butbrod,
     headerType: 1
 }
 await pemuda.sendMessage(_.jid, btnbc, MessageType.buttonsMessage, {quoted: ftrol})
