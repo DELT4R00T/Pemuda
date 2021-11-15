@@ -4400,16 +4400,33 @@ case 'githubstalk':
 					break 
 
 case 'brainly':
-					if (args.length < 1) return reply('Pertanyaan apa')
-		          	brien = args.join(' ')
-					brainly(`${brien}`).then(res => {
-					teks = '❉───────────────────────❉\n'
-					for (let Y of res.data) {
-					teks += `\n*「 _BRAINLY_ 」*\n\n*➸ Pertanyaan:* ${Y.pertanyaan}\n\n*➸ Jawaban:* ${Y.jawaban[0].text}\n❉──────────────────❉\n`
-					}
-					pemuda.sendMessage(from, teks, text,{quoted:mek,detectLinks: false})                        
-		            })              
-					break
+			if (args.length < 1) return reply('𝐓𝐞𝐱𝐭𝐧𝐲𝐚 𝐦𝐚𝐧𝐚?')				
+            brien = body.slice(9)
+			brainly(`${brien}`).then(res => {
+			teks = '❉───────────────────────❉\n'
+			for (let Y of res.data) {
+			teks += `\n*「 _BRAINLY_ 」*\n\n*➸ Pertanyaan:* ${Y.pertanyaan}\n\n*➸ Jawaban:* ${Y.jawaban[0].text}\n❉───────────────────────❉\n`
+			}
+			reply(teks)			
+			})								
+			break
+            case 'brainly2': 
+		    if ((isMedia && !pemuda.message.videoMessage || isQuotedImage) && args.length == 0) {
+	   	    const encmedia = isQuotedImage ? JSON.parse(JSON.stringify(pemuda).replace('quotedM','m')).message.extendedTextMessage.contextInfo : pemuda
+		    const media = await pemuda.downloadAndSaveMediaMessage(encmedia)
+		    await recognize(media, {lang: 'eng+ind', oem: 1, psm: 3})
+	        .then(teks => {								 
+		    fs.unlinkSync(media)							                           
+            brainly(`${teks}`).then(res => {
+		    teks = '❉───────────────────────❉\n'
+		    for (let Y of res.data) {
+		    teks += `\n*「 _BRAINLY_ 」*\n\n*➸ Pertanyaan:* ${Y.pertanyaan}\n\n*➸ Jawaban:* ${Y.jawaban[0].text}\n❉───────────────────────❉\n`
+		    }
+		  	reply(teks)			
+		    })			
+            }) 
+            } else { reply("Reply foto soal nya kak")}       	
+            break			
 					
 case 'pinterest':
 if (!c) return reply('yg mau di cari apa?')
